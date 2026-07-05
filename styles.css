@@ -267,6 +267,147 @@ tr:hover {
     text-align: center
 }
 
+.about-page {
+    width: min(1200px, 100%);
+    padding: 40px 20px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.about-hero,
+.history-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding: 24px;
+    background: #222;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.about-hero-image,
+.history-image {
+    flex: 1;
+}
+
+.about-hero-image img,
+.history-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.about-hero-content,
+.history-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.eyebrow {
+    font-family: 'Russo One', sans-serif;
+    color: #ff1f2e;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.about-hero h1,
+.about-hero h2,
+.section-heading h2,
+.history-content h2 {
+    margin: 0;
+    color: #fff;
+}
+
+.about-hero h1 {
+    font-size: 2.2rem;
+}
+
+.about-hero h2,
+.section-heading h2,
+.history-content h2 {
+    font-size: 1.4rem;
+}
+
+.about-hero-content p,
+.about-intro,
+.history-content p,
+.role-card p {
+    color: #ccc;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.about-section-card {
+    background: #222;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.about-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 24px;
+}
+
+.roles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.role-card {
+    background: #2a2a2a;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.role-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.role-card h3 {
+    color: #fff;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+
+    .about-hero,
+    .history-section {
+        flex-direction: column;
+    }
+
+    .roles-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .roles-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .carousel {
     position: relative;
     max-width: 900px;
